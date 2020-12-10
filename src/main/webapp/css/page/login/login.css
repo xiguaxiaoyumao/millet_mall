@@ -1,0 +1,104 @@
+.main-container {
+    width: 100%;
+    height: 100%;
+}
+
+.main-container .top {
+    background-repeat: no-repeat;
+    background-position: 100px;
+    background-size: 300px 100px;
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+}
+
+.main-container .banner {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 588px;
+}
+
+.banner .banner-box {
+    height: 500px;
+    width: 400px;
+    background: white;
+    position: absolute;
+    right: 70px;
+    margin-top: 44px;
+}
+
+.banner .banner-box input {
+    height: 50px;
+    width: 360px;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+.banner .banner-box .login-button {
+    cursor: pointer;
+}
+
+.banner .id-login {
+    display: inline-block;
+    margin-top: 30px;
+    margin: auto;
+    margin-left: 80px;
+    font-size: 22px;
+    color: #f56600;
+    margin-right: 15px;
+    font-family: "微软雅黑";
+}
+
+.banner .scan-login {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 22px;
+    margin-left: 15px;
+    color: black;
+    font-family: "微软雅黑";
+}
+
+.banner .immediate-regist {
+    font-size: 11px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 18px;
+}
+
+.banner .msg-regist {
+    font-size: 11px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 18px;
+}
+
+.banner .other-login-logo {
+    height: 50px;
+    width: 300px;
+    margin-left: 50px;
+    position: absolute;
+    bottom: 13px;
+}
+
+.other-login-logo img {
+    height: 50px;
+    width: 300px;
+}
+
+.id-login-box {
+    visibility: visible;
+}
+
+.scan-login-box {
+    visibility: hidden;
+    position: absolute;
+    top: 290px;
+    right: 117px;
+}
+
+.scan-login-box p {
+    font-size: 15px;
+    text-align: center;
+}

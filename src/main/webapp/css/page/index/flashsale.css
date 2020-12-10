@@ -1,0 +1,253 @@
+/* falshsale */
+
+.flashsale {
+    position: relative;
+    width: 1226px;
+    height: 380px;
+    margin: 0 auto;
+}
+
+.flashsale-hd {
+    cursor: pointer;
+    height: 58px;
+}
+
+.flashsale-hd .title {
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    color: #333;
+}
+
+.flashsale-bd .row {
+    margin-left: -14px;
+}
+
+.flashsale-countdown {
+    height: 300px;
+    padding-top: 39px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #e53935;
+    background: #f1eded;
+    text-align: center;
+    width: 234px;
+    float: left;
+    margin-left: 14px;
+}
+
+.flashsale-countdown .round {
+    font-size: 21px;
+    color: #ef3a3b;
+    padding-top: 15px;
+}
+
+.flashsale-countdown img {
+    margin: 25px auto;
+}
+
+.flashsale-countdown .desc {
+    color: rgba(0, 0, 0, .54);
+    font-size: 15px;
+}
+
+.flashsale-countdown .countdown {
+    width: 168px;
+    margin: 28px auto 0;
+}
+
+.flashsale-countdown .countdown span {
+    width: 46px;
+    height: 46px;
+    background: #605751;
+    color: #fff;
+    font-size: 24px;
+    line-height: 46px;
+    float: left;
+}
+
+.flashsale-countdown .countdown i {
+    width: 15px;
+    float: left;
+    height: 46px;
+    line-height: 46px;
+    color: #605751;
+    font-size: 28px;
+    font-style: normal;
+}
+
+.flashsale-list {
+    float: left;
+    width: 978px;
+    margin-left: 14px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.flashsale-list ul {
+    margin: 0;
+    padding: 0;
+    height: 340px;
+}
+
+.flashsale-list .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform, -webkit-transform;
+    box-sizing: content-box;
+}
+
+.flashsale-list .swiper-slide {
+    width: 234px;
+    margin-right: 14px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    text-align: center;
+    background: #fff;
+    transition: all .6s;
+    position: relative;
+    list-style: none;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    height: 100%;
+}
+
+.swiper-slide a {
+    display: block;
+    height: 300px;
+    padding-top: 39px;
+    position: relative;
+}
+
+.swiper-slide img {
+    display: block;
+    margin: 0 auto 22px;
+    height: 160px;
+    width: 160px;
+    display: inline-block;
+}
+
+.swiper-slide h4 {
+    margin: 0 20px 3px;
+    font-size: 14px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    color: #212121;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.swiper-slide p {
+    height: 18px;
+    margin: 0 20px 12px;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    color: #b0b0b0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.swiper-slide span {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ADADBD;
+}
+
+.swiper-slide em {
+    font-style: normal;
+    color: #FA6553;
+}
+
+.swiper-slide del {
+    text-decoration: line-through;
+}
+
+.swiper-wrapper li:nth-child(1) {
+    border-color: #FFAC13;
+}
+
+.swiper-wrapper li:nth-child(2) {
+    border-color: #83C44E;
+}
+
+.swiper-wrapper li:nth-child(3) {
+    border-color: #2196F3;
+}
+
+.swiper-wrapper li:nth-child(4) {
+    border-color: #E53935;
+}
+
+.swiper-wrapper li:nth-child(5) {
+    border-color: #FFAC13;
+}
+
+.swiper-wrapper li:nth-child(6) {
+    border-color: #83C44E;
+}
+
+.swiper-wrapper li:nth-child(7) {
+    border-color: #2196F3;
+}
+
+.swiper-wrapper li:nth-child(8) {
+    border-color: #E53935;
+}
+
+.swiper-wrapper li:nth-child(9) {
+    border-color: #FFAC13;
+}
+
+.swiper-wrapper li:nth-child(10) {
+    border-color: #83C44E;
+}
+
+.swiper-wrapper li:nth-child(11) {
+    border-color: #2196F3;
+}
+
+.swiper-wrapper li:nth-child(12) {
+    border-color: #E53935;
+}
+
+.swiper-controls {
+    position: absolute;
+    right: 0;
+    top: 24px;
+}
+
+.swiper-controls .swiper-flashsale-next, .swiper-controls .swiper-flashsale-prev {
+    display: inline-block;
+    width: 24px;
+    height: 16px;
+    padding: 3px 5px;
+    margin-left: -1px;
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+    line-height: 16px;
+    transition: color .5s;
+    color: #b0b0b0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.swiper-controls .swiper-flashsale-prev:hover, .swiper-controls .swiper-flashsale-next:hover {
+    color: #ff6700;
+}
+
+.swiper-controls .swiper-button-disabled {
+    color: #e0e0e0;
+    cursor: default;
+}
+
+.swiper-controls .swiper-button-disabled:hover {
+    color: #e0e0e0;
+}
+
+/* falshsale end */

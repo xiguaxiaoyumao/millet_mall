@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.PicMapper">
+    <select id="selectPicType" resultType="com.pojo.Pic" parameterType="com.pojo.Pic">
+        select pic_type from pic where pic.gds_id = #{gds_id} group by pic_type;
+    </select>
+    <select id="selectPicsByType" resultType="com.pojo.Pic" parameterType="com.pojo.Pic">
+        select pic_dir from pic where pic_type = #{pic_type} and gds_id = #{gds_id} order by pic_id;
+    </select>
+</mapper>

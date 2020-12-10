@@ -1,0 +1,105 @@
+.phone {
+    height: 674px;
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.pho-hd {
+    height: 22px;
+    padding: 19px 0;
+    line-height: 22px;
+}
+
+.pho-hd h4 {
+    float: left;
+    font-size: 22px;
+    color: #333333;
+    font-weight: 200;
+}
+
+.pho-hd a {
+    float: right;
+    font-size: 14px;
+    color: #333;
+}
+
+.pho-hd a:hover {
+    color: #ff6700;
+}
+
+.pho-bd-le img {
+    position: relative;
+    z-index: 1;
+    transition: all .2s linear;
+    float: left;
+    width: 234px;
+    height: 614px;
+}
+
+.pho-bd-le:hover {
+    z-index: 2;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+    transform: translate3d(0, -2px, 0);
+}
+
+.pho-bd-ri {
+    float: right;
+    width: 992px;
+    height: 614px;
+}
+
+.pho-bd-ri li {
+    position: relative;
+    z-index: 1;
+    float: left;
+    width: 234px;
+    height: 300px;
+    text-align: center;
+    margin: 0 0 14px 14px;
+    background-color: #fff;
+    transition: all .2s linear;
+}
+
+.pho-bd-ri li:hover {
+    z-index: 2;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+    transform: translate3d(0, -2px, 0);
+}
+
+.pho-bd-ri li img {
+    width: 160px;
+    height: 160px;
+    padding-top: 20px;
+}
+
+.pho-bd-ri li h4 {
+    height: 30px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #202020;
+}
+
+.pho-bd-ri li p {
+    height: 30px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #ADADBD;
+}
+
+.pho-bd-ri li span {
+    height: 30px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ADADBD;
+}
+
+.pho-bd-ri li em {
+    font-style: normal;
+    color: #FA6553;
+}
+
+.pho-bd-ri li del {
+    text-decoration: line-through;
+}

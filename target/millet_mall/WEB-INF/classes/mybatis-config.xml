@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
+    <typeAliases>
+        <typeAlias type="com.pojo.Gdstype" alias="Gdstype"/>
+        <typeAlias type="com.pojo.Cart" alias="Cart"/>
+        <typeAlias type="com.pojo.Favorite" alias="Favorite"/>
+        <typeAlias type="com.pojo.Address" alias="Address"/>
+    </typeAliases>
+</configuration>

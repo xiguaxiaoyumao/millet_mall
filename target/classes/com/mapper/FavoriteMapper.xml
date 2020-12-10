@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.FavoriteMapper">
+    <insert id="addFavorite" parameterType="Favorite">
+        insert into favorite(act_id, gds_id) values (#{act_id}, #{gds_id});
+    </insert>
+    <select id="selectFavorite" parameterType="Favorite" resultType="Favorite">
+        select fvrt_id, act_id, gds_id from favorite where act_id = #{act_id} and gds_id = #{gds_id};
+    </select>
+</mapper>

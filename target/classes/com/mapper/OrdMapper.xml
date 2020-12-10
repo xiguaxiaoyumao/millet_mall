@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.OrdMapper">
+    <insert id="addOrder" parameterType="com.pojo.Ord">
+        <selectKey keyProperty="ord_id" order="BEFORE" resultType="java.lang.String">
+            select uuid();
+        </selectKey>
+        insert into ord(ord_id,gds_id, gds_detail, gds_count, gds_total_price, phone, address, ord_status)
+        values (#{ord_id}, #{gds_id}, #{gds_detail}, #{gds_count}, #{gds_total_price}, #{phone}, #{address}, #{ord_status});
+    </insert>
+</mapper>

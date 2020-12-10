@@ -1,0 +1,183 @@
+.footer {
+    width: 100%;
+    background-color: #fff;
+}
+
+.center {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+/* maintain */
+
+.maintain {
+    width: 1226px;
+    height: 79px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.maintain li {
+    float: left;
+    height: 79px;
+    line-height: 79px;
+    font-size: 16px;
+}
+
+.maintain a {
+    float: left;
+    padding: 0 70px;
+    color: #616161;
+}
+
+.maintain a:hover {
+    color: #ff6700;
+}
+
+.maintain .sep {
+    float: left;
+    color: #E0E0E0;
+}
+
+/* maintain end*/
+
+/* service */
+
+.service {
+    width: 1226px;
+    height: 192px;
+}
+
+.service-left {
+    float: left;
+    width: 974px;
+    height: 192px;
+}
+
+.service-left dl {
+    float: left;
+    width: 160px;
+}
+
+.service-left dt {
+    margin: 45px 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+}
+
+.service-left dt a {
+    color: #424242;
+}
+
+.service-left dd {
+    margin: 10px 0 0;
+    font-size: 12px;
+}
+
+.service-left dd a {
+    color: #757575;
+}
+
+.service-left a:hover {
+    color: #ff6700;
+}
+
+.service-right {
+    float: right;
+    width: 160px;
+    text-align: center;
+}
+
+.service-right h4 {
+    padding: 42px 0 14px 0;
+    font-size: 18px;
+    color: #ff6700;
+    font-weight: 400;
+}
+
+.service-right p {
+    margin-bottom: 6px;
+    font-size: 12px;
+    color: #757575;
+}
+
+.service-right a {
+    background-color: #ffffff;
+    display: inline-block;
+    margin-top: 20px;
+    height: 28px;
+    line-height: 28px;
+    width: 118px;
+    font-size: 14px;
+    color: #ff6700;
+    border: 1px solid #ff6700;
+}
+
+.service-right a:hover {
+    background-color: #ff6700;
+    color: #fff;
+}
+
+/* service end*/
+
+/* copyright */
+
+.copyright {
+    height: 55px;
+    padding: 40px 10px 0 0;
+}
+
+.logo {
+    float: left;
+    width: 48px;
+    height: 48px;
+    background-position: -48px 0px;
+}
+
+.co-nav {
+    float: left;
+    padding-left: 10px;
+    width: 688px;
+    height: 55px;
+}
+
+.co-nav a, .co-nav span, .co-nav p {
+    font-size: 12px;
+}
+
+.co-nav a, .co-nav span {
+    color: #757575;
+}
+
+.co-nav p {
+    color: #B0B0B0;
+}
+
+.co-img {
+    float: right;
+    height: 55px;
+    width: 438px;
+}
+
+.co-img img {
+    height: 55px;
+    width: 80px;
+}
+
+/* copyright end */
+
+/* motto */
+
+.motto {
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+}
+
+.motto h4 {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "楷体";
+    color: #BEBEBE;
+}
+
+/* motto end */

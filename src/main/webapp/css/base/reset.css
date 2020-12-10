@@ -1,0 +1,50 @@
+html, body, p, h1, h2, h3, h4, h5, h6, form {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #333;
+    /*清除下划线*/
+    text-decoration: none;
+}
+
+img {
+    /*用于配合i标签使用*/
+    /*清除图片样式，多个img同行显示，方式为居中显示*/
+    border: none;
+    vertical-align: middle;
+}
+
+ul {
+    /*清除列表的样式*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+i {
+    /*i标签作为字体图片使用，使用em标签实现斜体*/
+    font-style: normal;
+    vertical-align: middle;
+}
+
+/*对表单标签进行reset操作*/
+
+textarea {
+    /*不可手动调节文本窗口大小*/
+    resize: none;
+}
+
+select, input, textarea, button {
+    /*清除外框，用于自定义的前置操作*/
+    outline: none;
+    vertical-align: middle;
+}
+
+button {
+    /*清除按钮样式，用于按钮样式自定义的前置操作*/
+    -webkit-appearance: none;
+    padding: 0;
+    margin: 0;
+}

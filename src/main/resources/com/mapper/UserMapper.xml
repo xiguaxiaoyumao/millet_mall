@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.UserMapper">
+    <select id="login" parameterType="com.pojo.User" resultType="com.pojo.User">
+        select act_id, act_name ,act_password from account where act_name = #{act_name} and act_password = #{act_password};
+    </select>
+    <select id="selectByName" parameterType="String" resultType="com.pojo.User">
+         select act_id, act_name, act_password from account where act_name = #{act_name};
+    </select>
+</mapper>

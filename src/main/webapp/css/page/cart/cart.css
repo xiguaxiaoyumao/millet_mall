@@ -1,0 +1,282 @@
+/* cart-page */
+
+.cart-page {
+    padding: 38px 0;
+    background: #f5f5f5;
+}
+
+.cart-page .container {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.cart-goods-list {
+    background-color: #fff;
+}
+
+.cart-goods-list .list-head {
+    height: 70px;
+    line-height: 70px;
+    padding-right: 26px;
+    color: #424242
+}
+
+.list-head .col {
+    font-size: 14px;
+    float: left;
+}
+
+.list-head .col-check {
+    width: 110px;
+}
+
+.list-head .col-check .check-box-all {
+    cursor: pointer;
+    border: #b0b0b0 solid 1px;
+    margin: 25px 0;
+    margin-left: 25px;
+    margin-right: 15px;
+    float: left;
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.list-head .col-img {
+    width: 120px;
+}
+
+.list-head .col-name {
+    margin-left: 120px;
+    width: 380px;
+}
+
+.list-head .col-price {
+    width: 140px;
+    padding-right: 18px;
+    text-align: center;
+    color: #424242;
+}
+
+.list-head .col-num {
+    width: 150px;
+    text-align: center;
+    color: #424242;
+}
+
+.list-head .col-total {
+    width: 120px;
+    padding-right: 81px;
+    text-align: right
+}
+
+.list-head .col-action {
+    width: 80px;
+    text-align: center;
+}
+
+.list-body .item-box {
+    padding: 15px 26px 15px 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.item-box .item-table {
+    font-size: 16px;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.item-table .item-row {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.item-row .col {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.item-row .col-check {
+    width: 110px;
+}
+
+.col-check .check-box {
+    cursor: pointer;
+    border: #b0b0b0 solid 1px;
+    margin: 25px 0;
+    margin-left: 25px;
+    margin-right: 15px;
+    float: left;
+    font-size: 15px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.item-row .col-img {
+    width: 120px;
+}
+
+.item-row .col-name {
+    margin-left: 120px;
+    width: 380px;
+}
+
+.col-name .name {
+    line-height: 1;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.item-row .col-price {
+    width: 140px;
+    padding-right: 18px;
+    text-align: center;
+    color: #424242;
+}
+
+.item-row .col-num {
+    width: 150px;
+    text-align: center;
+    color: #424242;
+}
+
+.col-num .change-goods-num {
+    border: 1px #e0e0e0 solid;
+}
+
+.col-num .change-goods-num div {
+    transition: all 0.3s;
+    cursor: pointer;
+    font-size: 20px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+}
+
+.col-num .plus {
+    float: right;
+}
+
+.col-num .sub {
+    float: left;
+}
+
+.col-num .plus:hover {
+    background-color: #e0e0e0;
+}
+
+.col-num .sub:hover {
+    background-color: #e0e0e0;
+}
+
+.col-num .goods-num {
+    float: left;
+    width: 71px;
+    height: 38px;
+    line-height: 38px;
+    padding: 0;
+    border-width: 0;
+    color: #424242;
+    font-size: 16px;
+    text-align: center;
+}
+
+.item-row .col-total {
+    color: #ff6700;
+    width: 120px;
+    padding-right: 81px;
+    text-align: right
+}
+
+.item-row .col-action {
+    width: 80px;
+    text-align: center;
+}
+
+.col-action .remove {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 auto;
+}
+
+.col-action .remove:hover {
+    color: #fff;
+    background-color: red;
+}
+
+.cart-bar {
+    margin-top: 20px;
+    height: 50px;
+    text-align: right;
+    background-color: #fff;
+    transition: all .3s ease, top .3s ease;
+    position: relative;
+}
+
+.cart-bar .section-left {
+    float: left;
+}
+
+.section-left .back-shopping {
+    line-height: 50px;
+    margin-left: 32px;
+}
+
+.section-left .cart-total {
+    margin-left: 16px;
+    padding-left: 16px;
+    border-left: 1px solid #eee;
+    color: #757575;
+}
+
+.section-left .cart-total i {
+    font-style: normal;
+    color: #ff6700;
+}
+
+.total-price {
+    margin: auto 0px;
+    padding-left: 13px;
+    color: #ff6700;
+}
+
+.total-price em {
+    font-style: normal;
+    font-size: 30px;
+}
+
+.total-price .btn {
+    width: 200px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 18px;
+    margin-left: 50px;
+    vertical-align: top;
+    transition: color .3s;
+    background: #ff6700;
+    border-color: #ff6700;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.total-price .btn:hover {
+    background-color: #f25807;
+    border-color: #f25807;
+}
+
+/* end */

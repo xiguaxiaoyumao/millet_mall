@@ -1,0 +1,359 @@
+/* topbar */
+.site-topbar {
+    background-color: #333333;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+.site-topbar .container {
+    width: 1226px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.site-topbar .sep {
+    margin: 0 .3em;
+    color: #424242;
+}
+
+.site-topbar .topbar-nav {
+    float: left;
+}
+
+.site-topbar a {
+    line-height: 40px;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+.site-topbar a:hover {
+    color: #fff;
+}
+
+.site-topbar .topbar-cart {
+    position: relative;
+    float: right;
+    width: 120px;
+    height: 40px;
+    margin-left: 15px;
+    transition: all .2s;
+    font-size: 12px;
+}
+
+.site-topbar .cart-mini {
+    position: relative;
+    z-index: 32;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #b0b0b0;
+    background: #424242;
+}
+.site-topbar .cart-mini:hover{
+    background-color: #fff;
+    color: #ff6700;
+}
+
+.site-topbar .topbar-cart-filled .cart-mini {
+    color: #fff;
+    background: #ff6700;
+}
+
+.site-topbar .cart-menu {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    z-index: 31;
+    width: 316px;
+    height: 0;
+    color: #424242;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+    overflow: hidden;
+    transition: height .3s;
+}
+
+.site-topbar .cart-menu .menu-content {
+    padding: 20px 0 0;
+}
+
+.site-topbar .cart-menu .loading {
+    margin: 0 20px 20px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.site-topbar .cart-menu .msg-empty {
+    padding: 20px 0 20px;
+    margin: 0 20px 20px;
+    text-align: center
+}
+
+.loader::after {
+    margin: -10px 0 0 6px;
+    animation-delay: .5s;
+    transform: scaleY(.5);
+}
+
+.loader::after, .loader::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 4px;
+    height: 20px;
+    content: "";
+    background: #ff6700;
+}
+
+.loader::before {
+    margin: -10px 0 0 -10px;
+    -webkit-animation-delay: .25s;
+    animation-delay: .25s;
+    -webkit-transform: scaleY(.3);
+    -ms-transform: scaleY(.3);
+    transform: scaleY(.3);
+}
+
+.loader, .loader::after, .loader::before {
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-animation-name: loader;
+    animation-name: loader;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.loader {
+    position: relative;
+    margin: 0 auto;
+    width: 4px;
+    height: 20px;
+    background: #ff6700;
+    overflow: visible;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+@keyframes loader {
+    0% {
+        -webkit-transform: scaleY(.5);
+        transform: scaleY(.5);
+        opacity: .2;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.site-topbar .cart-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.site-topbar .cart-list li {
+    position: relative;
+    height: 80px;
+    padding: 0 20px;
+}
+
+.site-topbar .cart-item {
+    border-top: 0;
+    position: relative;
+    height: 60px;
+    padding: 10px 0;
+    line-height: 20px;
+}
+
+.site-topbar .cart-item .thumb {
+    line-height: 40px;
+    float: left;
+    margin-right: 10px;
+}
+
+.site-topbar .cart-item .thumb img {
+    width: 60px;
+    height: 60px;
+}
+
+.site-topbar .cart-item .name {
+    float: left;
+    width: 95px;
+    height: 40px;
+    line-height: 20px;
+    margin: 10px 0;
+    color: #424242;
+    overflow: hidden;
+}
+
+.site-topbar .cart-item .name:hover {
+    color: #ff6700;
+}
+
+.site-topbar .cart-item .price {
+    float: right;
+    margin: 20px 20px 0 5px;
+}
+
+.site-topbar .cart-item .btn-del {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    font-size: 16px;
+    opacity: 0;
+    transition: all .2s;
+    color: #b0b0b0;
+    line-height: 40px;
+    display: inline-block;
+}
+
+.site-topbar .cart-item:hover .btn-del {
+    opacity: 1;
+}
+
+.site-topbar .cart-total {
+    padding: 15px 20px;
+    background: #fafafa;
+}
+
+.site-topbar .cart-total .total {
+    float: left;
+    width: 135px;
+    color: #757575;
+}
+
+.site-topbar .cart-total .price {
+    display: block;
+    font-weight: 400;
+    color: #ff6700;
+}
+
+.site-topbar .cart-total .price em {
+    font-size: 24px;
+    line-height: 1;
+    font-style: normal;
+}
+
+.site-topbar .cart-total .btn-cart {
+    float: right;
+    width: 130px;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    color: #f5f5f5;
+    background: #ff6700;
+    border: 1px solid #ff6700;
+    height: 38px;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.site-topbar .topbar-info {
+    position: relative;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+}
+
+.site-topbar .user {
+    position: relative;
+    width: 110px;
+    padding: 0;
+    white-space: nowrap;
+    float: left;
+}
+
+.site-topbar .user:hover {
+    background-color: #fff;
+}
+
+.site-topbar .user:hover a {
+    color: #000000;
+}
+
+.site-topbar .user a:hover {
+    color: #ff6700;
+}
+
+.site-topbar .user-name {
+    position: relative;
+    z-index: 5;
+    display: block;
+    width: 110px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.site-topbar .user-name .name {
+    display: inline-block;
+    width: auto;
+    max-width: 75px;
+    text-overflow: ellipsis;
+    vertical-align: text-bottom;
+    overflow: hidden;
+}
+
+.site-topbar .user-name i {
+    font-size: 24px;
+    line-height: 24px;
+    vertical-align: 9px;
+}
+
+.site-topbar .user-menu-wrapper {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    z-index: 30;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+}
+
+.site-topbar .user-menu {
+    width: 110px;
+    margin: 0;
+    padding: 7px 0;
+    list-style-type: none;
+}
+
+.site-topbar .user-menu a {
+    display: block;
+    padding: 3px 30px;
+    line-height: 2;
+}
+
+.site-topbar .user-menu a:hover {
+    color: #ff6700;
+    background-color: #f5f5f5;
+}
+
+.site-topbar .message {
+    padding: 0 10px;
+}
+
+.site-topbar .topbar-info .link-order {
+    padding: 0 5px;
+    text-align: center;
+    width: 70px;
+}
+.hide {
+    display: none !important;
+}
+/* topbar end */

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.GoodsMapper">
+    <select id="selectByRedMi" parameterType="String" resultType="com.pojo.Goods">
+        select gds_id, gds_name, gds_price,gds_def_img, gds_class from goods where gds_class = #{redMi} and nav = 1;
+    </select>
+    <select id="selectByMi" parameterType="String" resultType="com.pojo.Goods">
+        select gds_id, gds_name, gds_price,gds_def_img, gds_class from goods where gds_class = #{Mi} and nav = 1;
+    </select>
+    <select id="selectFlashSale" resultType="com.pojo.Goods">
+        select gds_id, gds_name, gds_price,gds_def_img ,gds_describe from goods where flash_sale = 1;
+    </select>
+    <select id="selectPhones" resultType="com.pojo.Goods">
+        select gds_id, gds_name, gds_price,gds_def_img ,gds_describe from goods where page = 1 and gds_class = 'redmi-phone' or gds_class = 'mi-phone';
+    </select>
+    <select id="selectHot" resultType="com.pojo.Goods">
+    select gds_id, gds_name, gds_price,gds_def_img ,gds_describe from goods where hot = 1;
+    </select>
+    <select id="selectTel" resultType="com.pojo.Goods">
+        select gds_id, gds_name, gds_price,gds_def_img ,gds_describe from goods where page = 1 and gds_class = 'television';
+    </select>
+    <select id="selectGoodsById" resultType="com.pojo.Goods" parameterType="com.pojo.Goods">
+        select gds_id, gds_name, gds_price,gds_def_img ,gds_describe from goods where gds_id = #{gds_id};
+    </select>
+    <select id="selectRecommend" resultType="com.pojo.Goods" parameterType="com.pojo.Goods">
+        select gds_id, gds_name, gds_price,gds_def_img ,gds_describe from goods where recommend = 1;
+    </select>
+</mapper>

@@ -1,0 +1,290 @@
+/* comfirm-order */
+
+.comfirm-page-main {
+    background: #f5f5f5;
+    padding: 38px 0;
+}
+
+.comfirm-page-main .comfirm-box {
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.comfirm-page-main .section {
+    padding: 30px 48px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    color: #424242;
+}
+
+.icon-right {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    font-size: 80px;
+    color: #83c44e;
+    text-align: center;
+    border: 2px solid #83c44e;
+    border-radius: 42px;
+    overflow: hidden;
+}
+
+.comfirm-page-main .section-order {
+    padding-left: 183px;
+    position: relative;
+}
+
+.comfirm-page-main .order-info {
+    padding: 20px 0;
+}
+
+.comfirm-page-main .order-info .fl {
+    float: left;
+}
+
+.comfirm-page-main .order-info .f1 .title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+.comfirm-page-main .order-info .order-time {
+    color: #616161;
+    margin-bottom: 5px;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+}
+
+.comfirm-page-main .order-info .order-time .pay-time-tip {
+    margin: 0 5px;
+    color: #ff6700;
+}
+
+.comfirm-page-main .order-info .fr {
+    float: right;
+    text-align: right;
+}
+
+.comfirm-page-main .order-info .fr .total {
+    margin-bottom: 10px;
+    color: #757575;
+}
+
+.comfirm-page-main .order-info .fr .money {
+    color: #ff6700;
+    font-size: 14px;
+}
+
+.comfirm-page-main .order-info .fr .money em {
+    font-style: normal;
+    font-size: 24px;
+}
+
+.comfirm-page-main .order-info .fr .show-detail {
+    font-style: normal;
+    font-size: 14px;
+}
+
+.comfirm-page-main .order-info .fr .show-detail:hover {
+    color: #ff6700;
+}
+
+.comfirm-page-main .order-detail {
+    overflow: hidden;
+    transition: height .3s;
+}
+
+.comfirm-page-main .order-detail ul {
+    padding: 20px 0 0 0;
+    margin-top: 10px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.comfirm-page-main .order-detail ul .label {
+    float: left;
+    width: 85px;
+    line-height: 24px;
+    color: #333;
+}
+
+.comfirm-page-main .order-detail ul li {
+    line-height: 24px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.comfirm-page-main .order-detail .content {
+    float: left;
+}
+
+.order-detail .content span {
+    display: block;
+}
+
+.order-detail .order-num {
+    color: #ff6700;
+}
+
+/* end */
+
+/* confirm-pay */
+
+.cash-title {
+    height: 50px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 18px;
+}
+
+.payment-box {
+    margin-bottom: 30px;
+}
+
+.payment-header {
+    margin-bottom: 15px;
+}
+
+.payment-header .title {
+    float: left;
+    font-size: 16px;
+    color: #616161;
+}
+
+.payment-header .desc {
+    float: left;
+    margin-left: 10px;
+    margin-top: 6px;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+.payment-body .payment-list {
+    margin: 0 0 0 -14px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.payment-list li {
+    float: left;
+    width: 174px;
+    height: 60px;
+    line-height: 60px;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .4s;
+}
+
+.payment-list li:hover {
+    border-color: #ff6700;
+}
+
+.payment-list li img {
+    cursor: pointer;
+    margin-left: 0;
+    opacity: 1;
+    border: 0px;
+}
+
+#cover {
+    background: #000;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+    display: none;
+    z-index: 2
+}
+
+.alipay-dialog {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border: 1px solid #838383;
+    background: #fff;
+    width: 370px;
+    height: auto;
+    border-radius: 5px;
+    color: #666;
+    z-index: 4;
+}
+
+.alipay-dialog .dialog-header {
+    position: relative;
+    height: 32px;
+    padding: 14px 20px;
+    line-height: 32px;
+    background-color: #f5f5f5;
+}
+
+.dialog-header .dialog-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: #424242;
+    vertical-align: middle;
+}
+
+.alipay-dialog .dialog-body {
+    padding: 20px;
+}
+
+.dialog-body .code {
+    height: 290px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.dialog-body .msg {
+    text-align: center;
+}
+
+.dialog-body .msg span {
+    color: #ff6700;
+    cursor: pointer;
+}
+
+.alipay-dialog .btn-close {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #757575;
+    cursor: pointer;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    z-index: 10;
+    border-radius: 15px;
+    vertical-align: middle;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.alipay-dialog .btn-close:hover {
+    color: #fff;
+    background-color: #e53935;
+}
+
+.hide {
+    display: none !important;
+}
+
+/* end */

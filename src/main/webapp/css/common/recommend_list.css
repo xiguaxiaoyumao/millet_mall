@@ -1,0 +1,110 @@
+.container {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.cart-recommend {
+    margin: 60px 0 0;
+}
+
+.cart-recommend .recommend-title {
+    position: relative;
+    margin: 0;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #757575;
+    border-top: 1px solid #e0e0e0;
+}
+
+.recommend-title span {
+    position: absolute;
+    top: -20px;
+    left: 372px;
+    height: 40px;
+    width: 482px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    background-color: #f5f5f5;
+}
+
+.recommend-list {
+    margin: 0 0 0 -14px;
+    padding: 0;
+}
+
+.recommend-list .recommend-item {
+    float: left;
+    width: 234px;
+    height: 300px;
+    margin: 0 0 14px 14px;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    background-color: #fff;
+    text-align: center;
+}
+
+.recommend-item img {
+    display: block;
+    margin: 40px auto 20px;
+    width: 140px;
+    height: 140px;
+}
+
+.recommend-item .goods-name {
+    margin: 0 10px 10px;
+    height: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #333;
+}
+
+.recommend-item .goods-price {
+    margin-bottom: 10px;
+    color: #ff6700;
+}
+
+.recommend-item .goods-tips {
+    position: relative;
+    color: #757575
+}
+
+.recommend-item .recommend-action {
+    position: absolute;
+    left: 0;
+    bottom: 16px;
+    width: 100%;
+    opacity: 0;
+    transform: translate3d(0, 200%, 0);
+    transition: all .4s;
+}
+
+.recommend-action .recommend-btn {
+    width: 120px;
+    border-color: #ff6700;
+    background: #fff;
+    color: #ff6700;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #b0b0b0;
+    transition: all .4s;
+}
+
+.recommend-action .recommend-btn:hover {
+    color: #fff;
+    background-color: #f25807;
+    border-color: #f25807;
+}
+
+.recommend-item:hover .recommend-action {
+    opacity: 1;
+    transform: translateZ(0);
+}

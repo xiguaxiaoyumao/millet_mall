@@ -1,0 +1,58 @@
+.goods {
+    width: 1226px;
+    margin: 40px auto;
+    height: 170px;
+    padding: 14px 0 44px 0;
+}
+
+.goods li {
+    position: relative;
+    z-index: 1;
+    float: left;
+    width: 316px;
+    height: 170px;
+    margin-left: 14px;
+    transition: all .2s linear;
+}
+
+.goods li:hover {
+    z-index: 2;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+    transform: translate3d(0, -2px, 0);
+}
+
+.goods li img {
+    width: 316px;
+    height: 170px;
+    margin-left: 0;
+}
+
+.goods li .goods-0 {
+    width: 234px;
+    height: 170px;
+}
+
+.goods li:first-child {
+    width: 234px;
+    margin-left: 0;
+}
+
+.ads {
+    width: 1226px;
+    margin: 42px auto;
+}
+
+.ads a {
+    display: block;
+}
+
+.ads a img {
+    height: 120px;
+    width: 1226px;
+}
+
+.page-main {
+    width: 96%;
+    margin: 42px auto;
+    background-color: #F5F5F5;
+}

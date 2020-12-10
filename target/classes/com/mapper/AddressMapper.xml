@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.AddressMapper">
+    <!-- 根据用户id分状态查询地址 -->
+    <select id="selectByActId" parameterType="Address" resultType="Address">
+        select address_id, act_id, user_name, phone, address, address_detail, address_default, label
+        from address where act_id = #{act_id} and address_default = #{address_default};
+    </select>
+    <!-- 更新地址信息 -->
+    <update id="updateAddressById" parameterType="Address">
+        update  address set  user_name = #{user_name}, phone = #{phone}, address = #{address}, address_detail = #{address_detail},
+         address_default = #{address_default}, label = #{label} where address_id = #{address_id} and act_id = #{act_id};
+    </update>
+    <!-- 添加地址信息 -->
+    <insert id="insertAddress" parameterType="Address">
+        <selectKey keyProperty="address_id" order="AFTER" resultType="java.lang.Integer">
+            SELECT LAST_INSERT_ID();
+        </selectKey>
+        insert into address(act_id, user_name, phone, address, address_detail, address_default, label) values
+        (#{act_id}, #{user_name}, #{phone}, #{address}, #{address_detail}, #{address_default}, #{label});
+    </insert>
+    <select id="selectByAddressId" parameterType="Address" resultType="Address">
+        select address_id, act_id, user_name, phone, address, address_detail, address_default, label
+        from address where address_id = #{address_id};
+    </select>
+</mapper>

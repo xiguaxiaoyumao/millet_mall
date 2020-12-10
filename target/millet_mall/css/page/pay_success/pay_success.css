@@ -1,0 +1,112 @@
+.page-main {
+    padding: 38px 0;
+    background: #f5f5f5;
+}
+
+.pay-success-box {
+    background-color: #8bc34a;
+}
+
+.container {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+.pay-success-box .succ {
+    float: left;
+    width: 506px;
+    height: 400px;
+    text-align: center;
+}
+
+.pay-success-box .succ .title {
+    font-size: 48px;
+    color: #fff;
+    line-height: 1;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.pay-success-box .succ .price {
+    margin: 20px 0 30px;
+    color: #ff0;
+}
+
+.pay-success-box .succ .price em {
+    font-style: normal;
+    font-size: 24px;
+}
+
+.pay-success-box .succ .btn {
+    margin-bottom: 30px;
+    border-color: #fff;
+    background: none;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    width: 158px;
+    height: 38px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #b0b0b0;
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;
+    color: #b0b0b0;
+    cursor: pointer;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+
+.pay-success-box .succ .state {
+    font-size: 12px;
+    color: #333;
+}
+
+.pay-success-box .succ .state a {
+    color: #ff0;
+}
+
+.pay-success-box .info {
+    float: left;
+    width: 660px;
+    min-height: 400px;
+    padding-left: 60px;
+    font-size: 12px;
+    background-color: #fff;
+    position: relative;
+}
+
+.pay-success-box .info ul {
+    width: 480px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 14px;
+}
+
+.pay-success-box .info li .label {
+    float: left;
+    color: #b0b0b0;
+}
+
+.pay-success-box .info li .content {
+    float: left;
+    color: #757575;
+}
+
+.pay-success-box .info .app-code {
+    position: absolute;
+    right: 40px;
+    bottom: 25px;
+    text-align: center;
+}
+
+.pay-success-box .info .app-code img {
+    display: block;
+    width: 86px;
+    height: 86px;
+    margin: 0 auto 10px;
+}
